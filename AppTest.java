@@ -1,4 +1,4 @@
-package com.codegnan.hibernate_01;
+package com.codegnan;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
