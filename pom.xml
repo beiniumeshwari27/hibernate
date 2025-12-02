@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.codegnan</groupId>
-  <artifactId>hibernate-02</artifactId>
+  <artifactId>hibernate-03</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>hibernate-02</name>
+  <name>hibernate-03</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -31,6 +31,12 @@
     <groupId>com.mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
     <version>8.3.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.42</version>
 </dependency>
   </dependencies>
 </project>
