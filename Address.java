@@ -10,28 +10,32 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
-@ToString
+@NoArgsConstructor
+
 @Entity
 public class Address {
+	@Override
+	public String toString() {
+		return "Address [addrId=" + addrId + ", City=" + City + ", State=" + State + ", Pincode=" + Pincode + "]";
+	}
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 private int addrId;
-private String city;
-private String state;
-private String pincode;
+private String City;
+private String State;
+private String Pincode;
 @OneToOne
+
 private Employee employee;
 public Address(String city, String state, String pincode) {
 	super();
-	this.city = city;
-	this.state = state;
-	this.pincode = pincode;
+	this.City = city;
+	this.State = state;
+	this.Pincode = pincode;
 }
 
 }
